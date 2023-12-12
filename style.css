@@ -1,0 +1,487 @@
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUI-SemiBold.woff2') format('woff2'),
+    url('../fonts/SegoeUI-SemiBold.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUI-Bold.woff2') format('woff2'),
+    url('../fonts/SegoeUI-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUI.woff2') format('woff2'), url('../fonts/SegoeUI.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Bold.woff2') format('woff2'),
+    url('../fonts/WorkSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('../fonts/WorkSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+body {
+  background-color: #6725a8;
+  font-family: 'Segoe UI';
+  padding: 0;
+  margin: 0;
+}
+
+.subheading {
+  font-size: 20px;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 13px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-heading {
+  font-family: 'Segoe UI';
+  font-size: 22px;
+  line-height: 24px;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.header-search {
+  display: none;
+}
+
+.main-header-profile,
+.main-header-cart {
+  display: none;
+}
+
+/*MAIN*/
+
+main {
+  background-color: white;
+  width: auto;
+  padding: 16px;
+  margin: 0;
+  border-radius: 30px;
+}
+
+/*CART*/
+
+.cart h2 {
+  margin-top: 0;
+  /* font-family: 'Work Sans'; */
+}
+
+.check-all-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fold-all-button {
+  border: none;
+  background: none;
+}
+
+.cart-items-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*ITEM*/
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 2px 0;
+}
+
+.item-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-photo-block {
+  position: relative;
+}
+
+.item-size-beige {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
+}
+
+.item-photo-checkbox {
+  position: absolute;
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+}
+
+.discount {
+  font-weight: 400;
+  font-size: 13px;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.item-title {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.missing-items li {
+  color: #9797af;
+}
+
+.missing-items .item-photo {
+  filter: grayscale(100%);
+}
+
+.item-color,
+.item-storage {
+  font-size: 13px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.item-storage {
+  color: gray;
+}
+
+.item-seller-block {
+  display: none;
+}
+
+.item-buttons-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  box-sizing: border-box;
+}
+
+.item-buttons-block button {
+  border: none;
+  background: none;
+}
+
+.item-buttons-block--missing {
+  justify-content: end;
+}
+
+.item-quantity {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 80px;
+}
+
+.item-quantity p {
+  margin: 0;
+}
+
+.item-remaining {
+  color: red;
+  font-size: 13px;
+}
+
+.item-misc-buttons {
+  width: 30%;
+  padding: 0 13px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+/*DELIVERY*/
+
+.delivery h2 {
+  margin: 0;
+}
+
+.delivery-block-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.delivery-block-heading button {
+  color: #cb11ab;
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pick-up-point-heading {
+  margin: 0;
+  font-weight: 700;
+}
+
+.pick-up-point-address {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.pick-up-point-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.pick-up-point-info p {
+  margin: 0 5px;
+  font-size: 13px;
+}
+
+.delivery-cost {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+
+.delivery-cost-result {
+  font-size: 16px;
+  margin: 0;
+}
+
+.delivery-dates {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.items-thumbnails-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.delivery-refund {
+  font-size: 13px;
+  display: flex;
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.delivery-refund p {
+  margin: 0;
+}
+
+.delivery-refund span {
+  color: #0cb477;
+}
+
+/*PAYMENT*/
+
+.payment-block-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.payment-block-heading button {
+  color: #cb11ab;
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.payment-block-heading h2 {
+  margin: 0;
+}
+
+.payment-method-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.payment-method-details p {
+  margin: 0;
+}
+
+.payment-method-message {
+  font-size: 13px;
+  color: #9797af;
+  margin: 0;
+  margin-top: 10px;
+}
+
+/*CUSTOMER*/
+
+.customer {
+  margin-top: 45px;
+}
+
+.customer-details-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.customer-details-entry {
+  width: 100%;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Segoe UI';
+}
+
+.customer-details-label {
+  font-size: 12px;
+}
+
+.customer-details-label--phone {
+  color: #a0a0a4;
+}
+
+/*SUMMARY*/
+
+.summary {
+  margin-top: 40px;
+}
+
+.summary-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.summary-list p {
+  margin: 0;
+}
+
+.summary-cost {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.summary-items,
+.summary-discount,
+.summary-delivery {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.summary-pick-point,
+.summary-payment {
+  display: none;
+}
+
+.delivery-refund--summary {
+  background-color: #f0ecf4;
+  padding: 10px 10px;
+  border-radius: 8px;
+}
+
+.summary-payment-time {
+  background-color: #f0ecf4;
+  padding: 10px 10px;
+  border-radius: 8px;
+  margin: 15px 0 30px 0;
+  font-size: 13px;
+}
+
+.summary-payment-time p {
+  margin: 0;
+  padding: 7px 0;
+}
+
+.summary-order-button {
+  border: none;
+  background-color: #cb11ab;
+  color: white;
+  font-family: 'Segoe UI';
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.summary-agreement {
+  display: flex;
+  align-items: baseline;
+  padding: 10px 0;
+}
+
+.summary-agreement p {
+  margin: 0;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+/*FOOTER*/
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+/*NAVIGATION*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 13px 10px 13px;
+  background-color: white;
+}
