@@ -23,109 +23,114 @@
     </header>
     <main>
       <h1 class="visually-hidden">Товары и точка - Корзина</h1>
-      <section class="cart">
-        <h2 class="subheading">Корзина</h2>
-        <div class="check-all-block">
-          <div>
-            <input type="checkbox" />
-            <label>Выбрать все</label>
+      <div class="container">
+        <section class="cart">
+          <h2 class="subheading">Корзина</h2>
+          <div class="check-all-block">
+            <div>
+              <input type="checkbox" />
+              <label>Выбрать все</label>
+            </div>
+            <button class="fold-all-button">
+              <img src="images/icon-arrow-up.svg" width="20" height="20" />
+            </button>
           </div>
-          <button class="fold-all-button">
-            <img src="images/icon-arrow-up.svg" width="20" height="20" />
-          </button>
-        </div>
-        <section class="cart-items">
-          <ul class="cart-items-list">
-            <li class="item">
-              <div class="item-description">
+          <section class="cart-items">
+            <ul class="cart-items-list">
+              <li class="item">
                 <div class="item-photo-block">
                   <input type="checkbox" class="item-photo-checkbox" />
                   <span class="item-size-beige">56</span>
                   <img class="item-photo" src="images/Frame_3853.png" />
                 </div>
-                <div>
-                  <p class="item-price">
-                    522 сом <span class="item-price discount">1051 сом</span>
-                  </p>
+                <div class="item-price-block">
+                  <p class="item-price">522 сом</p>
+                  <p class="item-price discount">1051 сом</p>
+                </div>
+                <div class="item-description-block">
                   <p class="item-title">Футболка UZcotton мужская</p>
-                  <p class="item-color">Цвет: белый</p>
+                  <div class="item-color-size-block">
+                    <p class="item-color">Цвет: белый</p>
+                    <p class="item-size">Размер: 56</p>
+                  </div>
                   <p class="item-storage">Коледино WB</p>
                   <div class="item-seller-block">
-                    <p class="item-seller">OOO Вайлдберриз<span></span></p>
+                    <p class="item-seller">OOO Вайлдберриз</p>
                     <img src="images/icon-details.svg" />
                   </div>
                 </div>
-              </div>
-              <div class="item-buttons-block">
-                <div class="item-quantity">
-                  <button type="button" class="decrease-button">-</button>
-                  <p>1</p>
-                  <button type="button" class="increase-button">+</button>
+                <div class="item-buttons-block">
+                  <div class="item-quantity">
+                    <button type="button" class="decrease-button">-</button>
+                    <p>1</p>
+                    <button type="button" class="increase-button">+</button>
+                  </div>
+                  <p class="item-remaining">Осталось 2 шт.</p>
+                  <div class="item-misc-buttons">
+                    <button>
+                      <img src="images/icon-favorite.svg" />
+                    </button>
+                    <button>
+                      <img src="images/icon-delete.svg" />
+                    </button>
+                  </div>
                 </div>
-                <p class="item-remaining">Осталось 2 шт.</p>
-                <div class="item-misc-buttons">
-                  <button>
-                    <img src="images/icon-favorite.svg" />
-                  </button>
-                  <button>
-                    <img src="images/icon-delete.svg" />
-                  </button>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="missing-items">
-          <div class="check-all-block">
-            <h3>Отсутствуют 3 товара</h3>
-            <button class="fold-all-button">
-              <img src="images/icon-arrow-up.svg" width="20" height="20" />
-            </button>
-          </div>
-          <ul class="cart-items-list">
-            <li class="item">
-              <div class="item-description">
-                <div class="item-photo-block">
+              </li>
+            </ul>
+          </section>
+          <section class="missing-items">
+            <div class="check-all-block">
+              <h3>Отсутствуют 3 товара</h3>
+              <button class="fold-all-button">
+                <img src="images/icon-arrow-up.svg" width="20" height="20" />
+              </button>
+            </div>
+            <ul class="cart-items-list cart-items-list--missed">
+              <li class="item item-missed">
+                <div class="item-photo-block item-photo-block-missed">
                   <span class="item-size-beige">56</span>
                   <img class="item-photo" src="images/Frame_3853.png" />
                 </div>
-                <div>
+                <div class="item-description-block item-description-block--missed">
                   <p class="item-title">Футболка UZcotton мужская</p>
-                  <p class="item-color">Цвет: белый</p>
+                  <div class="item-color-size-block">
+                    <p class="item-color">Цвет: белый</p>
+                    <p class="item-size">Размер: 56</p>
+                  </div>
                 </div>
-              </div>
-              <div class="item-buttons-block item-buttons-block--missing">
-                <div class="item-misc-buttons missing">
-                  <button>
-                    <img src="images/icon-favorite.svg" />
-                  </button>
-                  <button>
-                    <img src="images/icon-delete.svg" />
-                  </button>
+                <div class="item-buttons-block item-buttons-block--missing">
+                  <div class="item-misc-buttons missing">
+                    <button>
+                      <img src="images/icon-favorite.svg" />
+                    </button>
+                    <button>
+                      <img src="images/icon-delete.svg" />
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </section>
         </section>
-      </section>
-      <section class="delivery">
-        <div class="delivery-block-heading">
-          <h2 class="subheading">Способ доставки</h2>
-          <button>Изменить</button>
-        </div>
-        <div class="pick-up-point">
-          <p class="pick-up-point-heading">Пункт выдачи</p>
-          <p class="pick-up-point-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-          <div class="pick-up-point-info">
-            <img src="images/icon-rating-star.svg" />
-            <p class="pick-up-point-rating">4.99</p>
-            <p class="pick-up-point-working-hours">Ежедневно с 10 до 21</p>
+        <section class="delivery">
+          <div class="delivery-block-heading">
+            <h2 class="subheading">Способ доставки</h2>
+            <button>Изменить</button>
           </div>
-        </div>
-        <p class="delivery-cost">Стоимость доставки</p>
-        <p class="delivery-cost-result">Бесплатно</p>
-        <div>
-          <div>
+          <div class="pick-up-point">
+            <p class="pick-up-point-heading">Пункт выдачи</p>
+            <p class="pick-up-point-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+            <div class="pick-up-point-info">
+              <img src="images/icon-rating-star.svg" />
+              <p class="pick-up-point-rating">4.99</p>
+              <p class="pick-up-point-working-hours">Ежедневно с 10 до 21</p>
+            </div>
+          </div>
+          <div class="delivery-cost-block">
+            <p class="delivery-cost">Стоимость доставки</p>
+            <p class="delivery-cost-result">Бесплатно</p>
+          </div>
+          <div class="delivery-dates-block">
             <p class="delivery-dates">5-6 февраля</p>
             <ul class="cart-items-list items-thumbnails-list">
               <li>
@@ -137,79 +142,55 @@
               <li>
                 <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
               </li>
-              <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
-              </li>
-              <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
-              </li>
-              <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
-              </li>
-              <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
-              </li>
-              <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
-              </li>
-              <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
-              </li>
-              <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
-              </li>
             </ul>
           </div>
-          <div>
-            <p class="delivery-dates">7-8 февраля</p>
-            <ul class="cart-items-list items-thumbnails-list">
-              <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
+          <div class="delivery-refund">
+            <img src="images/icon-marked.svg" />
+            <p>Обратная доставка товаров на склад при отказе —<span> бесплатно</span></p>
+          </div>
+        </section>
+        <section class="payment">
+          <div class="payment-block-heading">
+            <h2 class="subheading">Способ оплаты</h2>
+            <button>Изменить</button>
+          </div>
+          <div class="payment-method-details">
+            <img src="images/mir.png" />
+            <p>1234 56•• •••• 1234 01/30</p>
+          </div>
+          <p class="payment-method-message">Спишем оплату с карты при получении</p>
+        </section>
+        <section class="customer">
+          <h2 class="subheading">Получатель</h2>
+          <form>
+            <ul class="customer-details-list">
+              <li class="customer-details-entry--name">
+                <input type="text" placeholder="Имя" class="customer-details-entry" />
+              </li>
+              <li class="customer-details-entry--surname">
+                <input type="text" placeholder="Фамилия" class="customer-details-entry" />
+              </li>
+              <li class="customer-details-entry--email">
+                <input type="text" placeholder="Почта" class="customer-details-entry" />
+              </li>
+              <li class="customer-details-entry--phone">
+                <label class="customer-details-label customer-details-label--phone">Телефон</label>
+                <br />
+                <input
+                  type="text"
+                  placeholder="Телефон"
+                  value="+7 988 123-45-67"
+                  class="customer-details-entry"
+                />
+              </li>
+              <li class="customer-details-entry--inn">
+                <input type="text" placeholder="ИНН" class="customer-details-entry" />
+                <label class="customer-details-label">Для таможенного оформления</label>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="delivery-refund">
-          <img src="images/icon-marked.svg" />
-          <p>Обратная доставка товаров на склад при отказе —<span> бесплатно</span></p>
-        </div>
-      </section>
-      <section class="payment">
-        <div class="payment-block-heading">
-          <h2 class="subheading">Способ оплаты</h2>
-          <button>Изменить</button>
-        </div>
-        <div class="payment-method-details">
-          <img src="images/mir.png" />
-          <p>1234 56•• •••• 1234 01/30</p>
-        </div>
-        <p class="payment-method-message">Спишем оплату с карты при получении</p>
-      </section>
-      <section class="customer">
-        <h2 class="subheading">Получатель</h2>
-        <form>
-          <ul class="customer-details-list">
-            <li>
-              <input type="text" placeholder="Имя" class="customer-details-entry" />
-            </li>
-            <li>
-              <input type="text" placeholder="Фамилия" class="customer-details-entry" />
-            </li>
-            <li>
-              <input type="text" placeholder="Почта" class="customer-details-entry" />
-            </li>
-            <li>
-              <label class="customer-details-label customer-details-label--phone">Телефон</label>
-              <br />
-              <input type="text" placeholder="Телефон" value="+7 988 123-45-67" />
-            </li>
-            <li>
-              <input type="text" placeholder="ИНН" class="customer-details-entry" />
-              <label class="customer-details-label">Для таможенного оформления</label>
-            </li>
-          </ul>
-        </form>
-      </section>
+          </form>
+        </section>
+      </div>
       <section class="summary">
         <div>
           <ul class="summary-list">
@@ -240,25 +221,29 @@
           </ul>
         </div>
         <div class="summary-pick-point">
-          <div>
+          <div class="summary-pick-point-heading">
             <h3>Доставка в пункт выдачи</h3>
-            <button></button>
+            <button>
+              <img src="images/icon-pencil.svg" width="16" height="16" />
+            </button>
           </div>
           <p>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-          <p>5-8 фев</p>
+          <p class="summary-pick-point-date">5-8 фев</p>
         </div>
         <div class="delivery-refund delivery-refund--summary">
           <img src="images/icon-marked.svg" />
           <p>Обратная доставка товаров на склад при отказе —<span> бесплатно</span></p>
         </div>
         <div class="summary-payment">
-          <div>
+          <div class="summary-payment-heading">
             <h3>Оплата картой</h3>
-            <button></button>
+            <button>
+              <img src="images/icon-pencil.svg" width="16" height="16" />
+            </button>
           </div>
-          <div>
+          <div class="summary-payment-method">
             <img src="images/mir.png" />
-            <p>1234 56•• •••• 1234 01/30</p>
+            <p>1234 56•• •••• 1234 <span class="card-date">01/30</span></p>
           </div>
         </div>
         <div class="summary-payment-time">
