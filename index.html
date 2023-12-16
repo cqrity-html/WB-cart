@@ -11,7 +11,8 @@
       <img class="header-burger-menu" src="images/icon-burger.svg" width="28" height="28" />
       <h1 class="header-heading">Товары и точка</h1>
       <input class="header-search" type="text" placeholder="Я ищу..." />
-      <img src="images/icon-search.svg" width="23" height="23" />
+      <label class="header-search-label"> </label>
+      <img class="header-burger-search" src="images/icon-search.svg" width="23" height="23" />
       <div class="main-header-profile">
         <img src="images/icon-profile.svg" />
         <a>Профиль</a>
@@ -28,8 +29,8 @@
           <h2 class="subheading">Корзина</h2>
           <div class="check-all-block">
             <div>
-              <input type="checkbox" />
-              <label>Выбрать все</label>
+              <input type="checkbox" class="check-all-checkbox visually-hidden" />
+              <label class="check-all-block-label">Выбрать все</label>
             </div>
             <button class="fold-all-button">
               <img src="images/icon-arrow-up.svg" width="20" height="20" />
@@ -39,9 +40,11 @@
             <ul class="cart-items-list">
               <li class="item">
                 <div class="item-photo-block">
-                  <input type="checkbox" class="item-photo-checkbox" />
+                  <label class="item-photo-block-label">
+                    <input type="checkbox" class="item-photo-checkbox visually-hidden" />
+                  </label>
                   <span class="item-size-beige">56</span>
-                  <img class="item-photo" src="images/Frame_3853.png" />
+                  <img class="item-photo" src="images/photo-01.jpg" width="80" />
                 </div>
                 <div class="item-price-block">
                   <p class="item-price">522 сом</p>
@@ -67,20 +70,95 @@
                   </div>
                   <p class="item-remaining">Осталось 2 шт.</p>
                   <div class="item-misc-buttons">
-                    <button>
-                      <img src="images/icon-favorite.svg" />
-                    </button>
-                    <button>
-                      <img src="images/icon-delete.svg" />
-                    </button>
+                    <button class="item-button-favorite"></button>
+                    <button class="item-button-delete"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-photo-block">
+                  <label>
+                    <input type="checkbox" class="item-photo-checkbox visually-hidden" />
+                  </label>
+                  <img class="item-photo" src="images/photo-02.jpg" width="80" />
+                </div>
+                <div class="item-price-block">
+                  <p class="item-price item-price-long">2 100 047 сом</p>
+                  <p class="item-price item-price-long discount">2 300 047 сом</p>
+                </div>
+                <div class="item-description-block">
+                  <p class="item-title item-title-long-01">
+                    Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на
+                    Apple iPhone XR, MobiSafe
+                  </p>
+                  <div class="item-color-size-block">
+                    <p class="item-color">Цвет: прозрачный</p>
+                  </div>
+                  <p class="item-storage">Коледино WB</p>
+                  <div class="item-seller-block">
+                    <p class="item-seller">OOO Мегапрофстиль</p>
+                    <img src="images/icon-details.svg" />
+                  </div>
+                </div>
+                <div class="item-buttons-block">
+                  <div class="item-quantity">
+                    <button type="button" class="decrease-button">-</button>
+                    <p>200</p>
+                    <button type="button" class="increase-button">+</button>
+                  </div>
+                  <div class="item-misc-buttons">
+                    <button class="item-button-favorite"></button>
+                    <button class="item-button-delete"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-photo-block">
+                  <label>
+                    <input type="checkbox" class="item-photo-checkbox visually-hidden" />
+                  </label>
+                  <img class="item-photo" src="images/photo-03.jpg" width="80" />
+                </div>
+                <div class="item-price-block">
+                  <p class="item-price">494 сом</p>
+                  <p class="item-price discount">950 сом</p>
+                </div>
+                <div class="item-description-block">
+                  <p class="item-title item-title-long-02">
+                    Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
+                    шестигранные, Faber-Castell
+                  </p>
+                  <div class="item-color-size-block">
+                    <p class="item-color">Цвет: белый</p>
+                    <p class="item-size">Размер: 56</p>
+                  </div>
+                  <p class="item-storage">Коледино WB</p>
+                  <div class="item-seller-block">
+                    <p class="item-seller">OOO Вайлдберриз</p>
+                    <img src="images/icon-details.svg" />
+                  </div>
+                </div>
+                <div class="item-buttons-block">
+                  <div class="item-quantity">
+                    <button type="button" class="decrease-button">-</button>
+                    <p>2</p>
+                    <button type="button" class="increase-button">+</button>
+                  </div>
+                  <p class="item-remaining">Осталось 2 шт.</p>
+                  <div class="item-misc-buttons">
+                    <button class="item-button-favorite"></button>
+                    <button class="item-button-delete"></button>
                   </div>
                 </div>
               </li>
             </ul>
           </section>
           <section class="missing-items">
-            <div class="check-all-block">
-              <h3>Отсутствуют 3 товара</h3>
+            <div class="check-all-block missing-items-header">
+              <div class="missing-items-header-block">
+                <p class="subheading">Отсутствуют</p>
+                <p class="subheading">3 товара</p>
+              </div>
               <button class="fold-all-button">
                 <img src="images/icon-arrow-up.svg" width="20" height="20" />
               </button>
@@ -89,7 +167,7 @@
               <li class="item item-missed">
                 <div class="item-photo-block item-photo-block-missed">
                   <span class="item-size-beige">56</span>
-                  <img class="item-photo" src="images/Frame_3853.png" />
+                  <img class="item-photo" src="images/photo-01.jpg" width="80" />
                 </div>
                 <div class="item-description-block item-description-block--missed">
                   <p class="item-title">Футболка UZcotton мужская</p>
@@ -99,13 +177,48 @@
                   </div>
                 </div>
                 <div class="item-buttons-block item-buttons-block--missing">
-                  <div class="item-misc-buttons missing">
-                    <button>
-                      <img src="images/icon-favorite.svg" />
-                    </button>
-                    <button>
-                      <img src="images/icon-delete.svg" />
-                    </button>
+                  <div class="item-misc-buttons item-misc-buttons--missing">
+                    <button class="item-button-favorite"></button>
+                    <button class="item-button-delete"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="item item-missed">
+                <div class="item-photo-block item-photo-block-missed">
+                  <span class="item-size-beige">56</span>
+                  <img class="item-photo" src="images/photo-02.jpg" width="80" />
+                </div>
+                <div class="item-description-block item-description-block--missed">
+                  <p class="item-title">
+                    Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на
+                    Apple iPhone XR, MobiSafe
+                  </p>
+                  <div class="item-color-size-block">
+                    <p class="item-color">Цвет: прозрачный</p>
+                  </div>
+                </div>
+                <div class="item-buttons-block item-buttons-block--missing">
+                  <div class="item-misc-buttons item-misc-buttons--missing">
+                    <button class="item-button-favorite"></button>
+                    <button class="item-button-delete"></button>
+                  </div>
+                </div>
+              </li>
+              <li class="item item-missed">
+                <div class="item-photo-block item-photo-block-missed">
+                  <span class="item-size-beige">56</span>
+                  <img class="item-photo" src="images/photo-03.jpg" width="80" />
+                </div>
+                <div class="item-description-block item-description-block--missed">
+                  <p class="item-title">Карандаши цветные Faber-Castell "Замок", набор 24 цв...</p>
+                  <div class="item-color-size-block">
+                    <p class="item-size">Размер: 56/54/52...</p>
+                  </div>
+                </div>
+                <div class="item-buttons-block item-buttons-block--missing">
+                  <div class="item-misc-buttons item-misc-buttons--missing">
+                    <button class="item-button-favorite"></button>
+                    <button class="item-button-delete"></button>
                   </div>
                 </div>
               </li>
@@ -134,13 +247,27 @@
             <p class="delivery-dates">5-6 февраля</p>
             <ul class="cart-items-list items-thumbnails-list">
               <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
+                <img src="images/photo-01-small.jpg" alt="фото моделей в белых футболках" />
               </li>
               <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
+                <img
+                  src="images/photo-02-small.jpg"
+                  alt="фото белого телефона в прозрачном чехле"
+                />
               </li>
               <li>
-                <img src="images/Bitmap.png" alt="фото моделей в белых футболках" />
+                <img src="images/photo-03-small.jpg" alt="фото коробки разноцветных карандашей" />
+              </li>
+            </ul>
+          </div>
+          <div class="delivery-dates-block">
+            <p class="delivery-dates">7-8 февраля</p>
+            <ul class="cart-items-list items-thumbnails-list">
+              <li>
+                <img
+                  src="images/photo-02-small.jpg"
+                  alt="фото белого телефона в прозрачном чехле"
+                />
               </li>
             </ul>
           </div>
@@ -171,7 +298,7 @@
                 <input type="text" placeholder="Фамилия" class="customer-details-entry" />
               </li>
               <li class="customer-details-entry--email">
-                <input type="text" placeholder="Почта" class="customer-details-entry" />
+                <input type="text" placeholder="Электронная почта" class="customer-details-entry" />
               </li>
               <li class="customer-details-entry--phone">
                 <label class="customer-details-label customer-details-label--phone">Телефон</label>
@@ -185,7 +312,9 @@
               </li>
               <li class="customer-details-entry--inn">
                 <input type="text" placeholder="ИНН" class="customer-details-entry" />
-                <label class="customer-details-label">Для таможенного оформления</label>
+                <label class="customer-details-label customer-details-inn"
+                  >Для таможенного оформления</label
+                >
               </li>
             </ul>
           </form>
@@ -247,8 +376,8 @@
           </div>
         </div>
         <div class="summary-payment-time">
-          <div>
-            <input type="checkbox" />
+          <div class="summary-payment-time-block">
+            <input type="checkbox" class="bill-now-button visually-hidden" />
             <label>Списать оплату сразу</label>
           </div>
           <p>Спишем оплату с карты при получении</p>
@@ -270,7 +399,7 @@
       <a>
         <img src="images/icon-nav-search.svg" width="28" height="28" />
       </a>
-      <a>
+      <a class="main-navigation-item">
         <img src="images/icon-nav-cart.svg" width="28" height="28" />
       </a>
       <a>
