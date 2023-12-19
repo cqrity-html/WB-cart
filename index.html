@@ -360,33 +360,57 @@
         <section class="customer">
           <h2 class="subheading">Получатель</h2>
           <form>
-            <ul class="customer-details-list">
-              <li class="customer-details-entry--name">
-                <input type="text" placeholder="Имя" class="customer-details-entry" />
-              </li>
-              <li class="customer-details-entry--surname">
-                <input type="text" placeholder="Фамилия" class="customer-details-entry" />
-              </li>
-              <li class="customer-details-entry--email">
-                <input type="text" placeholder="Электронная почта" class="customer-details-entry" />
-              </li>
-              <li class="customer-details-entry--phone">
-                <label class="customer-details-label customer-details-label--phone">Телефон</label>
-                <br />
-                <input
-                  type="text"
-                  placeholder="Телефон"
-                  value="+7 988 123-45-67"
-                  class="customer-details-entry"
-                />
-              </li>
-              <li class="customer-details-entry--inn">
-                <input type="text" placeholder="ИНН" class="customer-details-entry" />
-                <label class="customer-details-label customer-details-inn"
-                  >Для таможенного оформления</label
-                >
-              </li>
-            </ul>
+            <fieldset>
+              <ul class="customer-details-list">
+                <li class="customer-details-entry--name">
+                  <input
+                    type="text"
+                    placeholder="Имя"
+                    class="customer-details-entry"
+                    id="customer-name"
+                  />
+                </li>
+                <li class="customer-details-entry--surname">
+                  <input
+                    type="text"
+                    placeholder="Фамилия"
+                    class="customer-details-entry"
+                    id="customer-surname"
+                  />
+                </li>
+                <li class="customer-details-entry--email">
+                  <input
+                    type="text"
+                    placeholder="Электронная почта"
+                    class="customer-details-entry"
+                    id="customer-email"
+                  />
+                </li>
+                <li class="customer-details-entry--phone">
+                  <label class="customer-details-label customer-details-label--phone"
+                    >Телефон</label
+                  >
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="Телефон"
+                    class="customer-details-entry"
+                    id="customer-phone"
+                  />
+                </li>
+                <li class="customer-details-entry--inn">
+                  <input
+                    type="number"
+                    placeholder="ИНН"
+                    class="customer-details-entry"
+                    id="customer-inn"
+                  />
+                  <label class="customer-details-label customer-details-inn"
+                    >Для таможенного оформления</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
           </form>
         </section>
       </div>

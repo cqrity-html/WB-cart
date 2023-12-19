@@ -73,6 +73,14 @@ label {
   cursor: pointer;
 }
 
+fieldset {
+  border: none;
+}
+
+input[type='text']:focus {
+  outline: none;
+}
+
 /* .overlay {
   position: fixed;
   top: 0;
@@ -140,6 +148,12 @@ header {
     font-size: 16px;
     box-sizing: border-box;
     position: relative;
+  }
+}
+
+.header-search:focus {
+  @media (min-width: 1024px) {
+    background-color: white;
   }
 }
 
@@ -1175,6 +1189,22 @@ main {
   position: absolute;
   left: 0;
   top: 130%;
+}
+
+.error-field {
+  color: #f55123;
+  position: relative;
+  border: 1px solid red;
+}
+
+.error-field::after {
+  content: 'Укажите имя';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #f55123;
+  top: 120%;
+  left: 0;
 }
 
 /*SUMMARY*/

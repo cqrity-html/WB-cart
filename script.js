@@ -57,9 +57,6 @@ function openDeliveryModal(evt) {
         if (evt.key === 'Esc' || evt.key === 'Escape') {
             evt.preventDefault();
             deliveryModal.classList.add('visually-hidden');
-            // closeDeliveryModalButton.removeEventListener('click', () => {
-            //     deliveryModal.classList.add('visually-hidden');
-            // });
         }
     });
 }
@@ -82,9 +79,6 @@ function openPaymentModal(evt) {
         if (evt.key === 'Esc' || evt.key === 'Escape') {
             evt.preventDefault();
             paymentModal.classList.add('visually-hidden');
-            // closePaymentModalButton.removeEventListener('click', () => {
-            //     paymentModal.classList.add('visually-hidden');
-            // });
         }
     });
 }
@@ -100,3 +94,139 @@ deliveryModalButtons.forEach((button) => button.addEventListener('click', (evt) 
     evt.target.classList.add('button--active');
     modalLists.forEach((list) => list.classList.toggle('visually-hidden'));
 }));
+
+
+
+//CUSTOMER FORM
+
+const summaryOrderButton = document.querySelector('.summary-order-button');
+const customerDetailsFields = document.querySelectorAll('.customer-details-entry');
+const customerNameField = document.querySelector('#customer-name');
+const customerSurnameField = document.querySelector('#customer-surname');
+const customerPhoneField = document.querySelector('#customer-phone');
+const customerEmailField = document.querySelector('#customer-email');
+const customerInnField = document.querySelector('#customer-inn');
+const namesPattern = /^([А-ЯЁ][а-яё]{0,19})$/;
+const emailPattern = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+const phonePattern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
+const onFieldFocusOut = (evt) => {
+    const targetField = evt.target;
+    const isFieldEmpty = targetField.value === '';
+    console.log(targetField.id);
+    if (targetField.id === "customer-name" || targetField.id === "customer-surname") {
+        if (!isFieldEmpty && !namesPattern.test(targetField.value)) {
+            targetField.classList.add('error-field');
+            targetField.setCustomValidity('Имя должно начинаться с заглавной буквы и не должно содержать латинских, букв, цифр и знаков препинания');
+        } else {
+            targetField.classList.remove('error-field');
+        }
+    }
+
+    if (targetField.id === "customer-email") {
+        if (!isFieldEmpty && !emailPattern.test(targetField.value)) {
+            targetField.classList.add('error-field');
+            targetField.setCustomValidity('Введите верный электронный адрес в формате "name@domain.com"');
+        } else {
+            targetField.classList.remove('error-field');
+        }
+    }
+
+    if (targetField.id === "customer-phone") {
+        if (!isFieldEmpty && !phonePattern.test(targetField.value)) {
+            targetField.classList.add('error-field');
+            targetField.setCustomValidity('Введите верный номер телефона в формате "+7 ХХХ ХХХ-ХХ-ХХ"');
+        } else {
+            targetField.classList.remove('error-field');
+        }
+    }
+
+    if (targetField.id === "customer-inn") {
+        const isInnLength = targetField.value.length === 10 || targetField.value.length === 12;
+        if (!isFieldEmpty && !isInnLength) {
+            targetField.classList.add('error-field');
+            targetField.setCustomValidity('Введите верный номер ИНН - 10 символов для юр.лица или 12 символов для физ.лица');
+        } else {
+            targetField.classList.remove('error-field');
+        }
+    }
+
+    targetField.reportValidity();
+};
+
+const onFieldInput = (evt) => {
+    const targetField = evt.target;
+
+    if (targetField.id === "customer-name" || targetField.id === "customer-surname") {
+        if (namesPattern.test(targetField.value)) {
+            targetField.classList.remove('error-field');
+            targetField.setCustomValidity("");
+        } else {
+            targetField.setCustomValidity("");
+        }
+    }
+
+    if (targetField.id === "customer-email") {
+        if (emailPattern.test(targetField.value)) {
+            targetField.classList.remove('error-field');
+            targetField.setCustomValidity("");
+        } else {
+            targetField.setCustomValidity("");
+        }
+    }
+
+    if (targetField.id === "customer-phone") {
+        if (phonePattern.test(targetField.value)) {
+            targetField.classList.remove('error-field');
+            targetField.setCustomValidity("");
+        } else {
+            targetField.setCustomValidity("");
+        }
+    }
+
+
+    if (targetField.id === "customer-inn") {
+        const isInnLength = targetField.value.length === 10 || targetField.value.length === 12;
+        if (isInnLength) {
+            targetField.classList.remove('error-field');
+            targetField.setCustomValidity("");
+        } else {
+            targetField.setCustomValidity("");
+        }
+    }
+
+    targetField.reportValidity();
+};
+
+customerNameField.addEventListener('focusout', onFieldFocusOut);
+customerNameField.addEventListener('input', onFieldInput);
+customerSurnameField.addEventListener('focusout', onFieldFocusOut);
+customerSurnameField.addEventListener('input', onFieldInput);
+customerEmailField.addEventListener('focusout', onFieldFocusOut);
+customerEmailField.addEventListener('input', onFieldInput);
+customerPhoneField.addEventListener('focusout', onFieldFocusOut);
+customerPhoneField.addEventListener('input', onFieldInput);
+customerInnField.addEventListener('focusout', onFieldFocusOut);
+customerInnField.addEventListener('input', onFieldInput);
+
+summaryOrderButton.addEventListener('click', () => {
+    customerDetailsFields.forEach((field) => {
+        if (field.value === '') {
+            if (field.id === "customer-name") {
+                field.setCustomValidity('Укажите имя');
+            } else if (field.id === "customer-surname") {
+                field.setCustomValidity('Укажите фамилию')
+            } else if (field.id === "customer-email") {
+                field.setCustomValidity('Укажите электронную почту')
+            } else if (field.id === "customer-phone") {
+                field.setCustomValidity('Укажите телефон')
+            } else if (field.id === "customer-inn") {
+                field.setCustomValidity('Укажите ИНН')
+            }
+        }
+
+        field.classList.add('error-field');
+        field.scrollIntoView()
+        field.reportValidity();
+    })
+});
