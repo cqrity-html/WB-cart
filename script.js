@@ -31,7 +31,7 @@ foldAllButtonPresented.addEventListener('click', () => {
         checkAllBlock.style.paddingLeft = 0;
         itemsListsSeparator.style.display = 'block';
     } else {
-        checkAllBlock.style.paddingLeft = '33px';
+        checkAllBlock.style.paddingLeft = '29px';
         itemsListsSeparator.style.display = 'none';
     }
 });
