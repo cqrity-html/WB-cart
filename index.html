@@ -13,13 +13,15 @@
       <input class="header-search" type="text" placeholder="Я ищу..." />
       <label class="header-search-label"> </label>
       <img class="header-burger-search" src="images/icon-search.svg" width="23" height="23" />
-      <div class="main-header-profile">
-        <img src="images/icon-profile.svg" />
-        <a>Профиль</a>
-      </div>
-      <div class="main-header-cart">
-        <img src="images/icon-cart.svg" width="28" height="28" />
-        <a>Корзина</a>
+      <div class="header-links">
+        <div class="main-header-profile">
+          <img src="images/icon-profile.svg" />
+          <a>Профиль</a>
+        </div>
+        <div class="main-header-cart">
+          <img src="images/icon-cart.svg" width="28" height="28" />
+          <a>Корзина</a>
+        </div>
       </div>
     </header>
     <main>
@@ -251,7 +253,7 @@
                   <span class="item-size-beige">56</span>
                 </div>
                 <div class="item-description-block item-description-block--missed">
-                  <p class="item-title">Футболка UZcotton мужская</p>
+                  <p class="item-title item-title--missing">Футболка UZcotton мужская</p>
                   <div class="item-color-size-block">
                     <p class="item-color">Цвет: белый</p>
                     <p class="item-size">Размер: 56</p>
@@ -269,7 +271,7 @@
                   <img class="item-photo" src="images/photo-02.jpg" width="80" />
                 </div>
                 <div class="item-description-block item-description-block--missed">
-                  <p class="item-title">
+                  <p class="item-title item-title--missing">
                     Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на
                     Apple iPhone XR, MobiSafe
                   </p>
@@ -290,7 +292,10 @@
                   <span class="item-size-beige">56/54/52...</span>
                 </div>
                 <div class="item-description-block item-description-block--missed">
-                  <p class="item-title">Карандаши цветные Faber-Castell "Замок", набор 24 цв...</p>
+                  <p class="item-title item-title--missing">
+                    Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
+                    шестигранные, Faber-Castell
+                  </p>
                   <div class="item-color-size-block">
                     <p class="item-size">Размер: 56/54/52...</p>
                   </div>
@@ -356,7 +361,7 @@
           </div>
           <div class="delivery-refund">
             <img src="images/icon-marked.svg" />
-            <p>Обратная доставка товаров на склад при отказе —<span> бесплатно</span></p>
+            <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
             <div class="delivery-refund-block">
               <p>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
             </div>
@@ -403,12 +408,7 @@
                   />
                 </li>
                 <li class="customer-details-entry--phone">
-                  <input
-                    type="text"
-                    class="customer-details-entry"
-                    placeholder="+7 988 123-45-67"
-                    id="customer-phone"
-                  />
+                  <input type="text" class="customer-details-entry" id="customer-phone" />
                   <label class="customer-details-label customer-details-label--phone"
                     >Телефон</label
                   >
@@ -470,7 +470,7 @@
         </div>
         <div class="delivery-refund delivery-refund--summary">
           <img src="images/icon-marked.svg" />
-          <p>Обратная доставка товаров на склад при отказе —<span> бесплатно</span></p>
+          <p>Обратная доставка товаров <br />на склад при отказе — <span>бесплатно</span></p>
           <div class="delivery-refund-block">
             <p>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
           </div>
