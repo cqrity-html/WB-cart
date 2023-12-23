@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Товары и точка - Корзина</title>
+    <script defer src="index.js" type="module"></script>
   </head>
   <body>
     <header class="main-header">
@@ -47,209 +48,35 @@
             </button>
           </div>
           <section class="cart-items cart-items--presented">
-            <ul class="cart-items-list">
-              <li>
-                <div class="item-card">
-                  <div class="item-info">
-                    <div class="item-photo-block">
-                      <label class="item-photo-block-label">
-                        <input type="checkbox" class="item-photo-checkbox visually-hidden" />
-                      </label>
-                      <span class="item-size-beige">56</span>
-                      <img class="item-photo" src="images/photo-01.jpg" width="80" />
-                    </div>
-                    <div>
-                      <div class="item-price-block">
-                        <p class="item-price">522 сом</p>
-                        <p class="item-price discount">1051 сом</p>
-                        <div class="item-price-discount-summary">
-                          <div class="item-price-discount-block">
-                            <p class="item-price-discount-name">Скидка 55%</p>
-                            <p class="item-price-discount-amount">- 300 сом</p>
-                          </div>
-                          <div class="item-price-discount-block">
-                            <p class="item-price-discount-name">Скидка покупателя 10%</p>
-                            <p class="item-price-discount-amount">- 30 сом</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item-description-block">
-                        <p class="item-title">Футболка UZcotton мужская</p>
-                        <div class="item-color-size-block">
-                          <p class="item-color">Цвет: белый</p>
-                          <p class="item-size">Размер: 56</p>
-                        </div>
-                        <p class="item-storage">Коледино WB</p>
-                        <div class="item-seller-block">
-                          <p class="item-seller">OOO Вайлдберриз</p>
-                          <img src="images/icon-details.svg" class="seller-details-icon" />
-                          <div class="seller-details-block">
-                            <h3>OOO «Вайлдберриз»</h3>
-                            <p>ОГРН: 1067746062449</p>
-                            <p>
-                              142181, Московская область, д Коледино, тер. Индустриальный Парк
-                              Коледино, д. 6 стр. 1
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-buttons-block">
-                    <div class="item-quantity">
-                      <button type="button" class="decrease-button"></button>
-                      <p class="item-amount">1</p>
-                      <button type="button" class="increase-button"></button>
-                    </div>
-                    <p class="item-remaining">Осталось 2 шт.</p>
-                    <div class="item-misc-buttons">
-                      <button class="item-button-favorite"></button>
-                      <button class="item-button-delete"></button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="item-card">
-                  <div class="item-info">
-                    <div class="item-photo-block">
-                      <label>
-                        <input type="checkbox" class="item-photo-checkbox visually-hidden" />
-                      </label>
-                      <img class="item-photo" src="images/photo-02.jpg" width="80" />
-                    </div>
-                    <div>
-                      <div class="item-price-block">
-                        <p class="item-price item-price--long">2 100 047 сом</p>
-                        <p class="item-price discount discount--long">2 300 047 сом</p>
-                        <div class="item-price-discount-summary">
-                          <div class="item-price-discount-block">
-                            <p class="item-price-discount-name">Скидка 55%</p>
-                            <p class="item-price-discount-amount">- 300 сом</p>
-                          </div>
-                          <div class="item-price-discount-block">
-                            <p class="item-price-discount-name">Скидка покупателя 10%</p>
-                            <p class="item-price-discount-amount">- 30 сом</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item-description-block">
-                        <p class="item-title item-title-long-01">
-                          Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер
-                          на Apple iPhone XR, MobiSafe
-                        </p>
-                        <div class="item-color-size-block">
-                          <p class="item-color">Цвет: прозрачный</p>
-                        </div>
-                        <p class="item-storage">Коледино WB</p>
-                        <div class="item-seller-block">
-                          <p class="item-seller">OOO Мегапрофстиль</p>
-                          <img src="images/icon-details.svg" class="seller-details-icon" />
-                          <div class="seller-details-block">
-                            <h3>OOO «МЕГАПРОФСТИЛЬ»</h3>
-                            <p>ОГРН: 5167746237148</p>
-                            <p>
-                              129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2,
-                              офис 34
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-buttons-block">
-                    <div class="item-quantity">
-                      <button type="button" class="decrease-button"></button>
-                      <p class="item-amount">200</p>
-                      <button type="button" class="increase-button"></button>
-                    </div>
-                    <div class="item-misc-buttons">
-                      <button class="item-button-favorite"></button>
-                      <button class="item-button-delete"></button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="item-card">
-                  <div class="item-info">
-                    <div class="item-photo-block">
-                      <label>
-                        <input type="checkbox" class="item-photo-checkbox visually-hidden" />
-                      </label>
-                      <img class="item-photo" src="images/photo-03.jpg" width="80" />
-                    </div>
-                    <div>
-                      <div class="item-price-block">
-                        <p class="item-price">494 сом</p>
-                        <p class="item-price discount">950 сом</p>
-                        <div class="item-price-discount-summary">
-                          <div class="item-price-discount-block">
-                            <p class="item-price-discount-name">Скидка 55%</p>
-                            <p class="item-price-discount-amount">- 300 сом</p>
-                          </div>
-                          <div class="item-price-discount-block">
-                            <p class="item-price-discount-name">Скидка покупателя 10%</p>
-                            <p class="item-price-discount-amount">- 30 сом</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item-description-block">
-                        <p class="item-title item-title-long-02">
-                          Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
-                          шестигранные, Faber-Castell
-                        </p>
-                        <p class="item-storage">Коледино WB</p>
-                        <div class="item-seller-block">
-                          <p class="item-seller">OOO Вайлдберриз</p>
-                          <img src="images/icon-details.svg" class="seller-details-icon" />
-                          <div class="seller-details-block">
-                            <h3>OOO «Вайлдберриз»</h3>
-                            <p>ОГРН: 1067746062449</p>
-                            <p>
-                              142181, Московская область, д Коледино, тер. Индустриальный Парк
-                              Коледино, д. 6 стр. 1
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-buttons-block">
-                    <div class="item-quantity">
-                      <button type="button" class="decrease-button"></button>
-                      <p class="item-amount">2</p>
-                      <button type="button" class="increase-button"></button>
-                    </div>
-                    <p class="item-remaining">Осталось 2 шт.</p>
-                    <div class="item-misc-buttons">
-                      <button class="item-button-favorite"></button>
-                      <button class="item-button-delete"></button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <ul class="cart-items-list"></ul>
           </section>
           <div class="items-lists-separator"></div>
-          <section class="missing-items">
-            <div class="check-all-block missing-items-header check-all-block--missing">
-              <div class="missing-items-header-block">
-                <p class="subheading missing-items-subbheading">Отсутствуют · 3 товара</p>
-              </div>
-              <button class="fold-all-button fold-all-button--missing">
-                <img
-                  src="images/icon-arrow-up.svg"
-                  width="20"
-                  height="20"
-                  class="fold-all-image--missing"
-                />
-              </button>
+          <div class="check-all-block missing-items-header check-all-block--missing">
+            <div class="missing-items-header-block">
+              <p class="subheading missing-items-subbheading">Отсутствуют · 3 товара</p>
             </div>
+            <button class="fold-all-button fold-all-button--missing">
+              <img
+                src="images/icon-arrow-up.svg"
+                width="20"
+                height="20"
+                class="fold-all-image--missing"
+              />
+            </button>
+          </div>
+          <section class="missing-items">
             <ul class="cart-items-list cart-items--missing">
               <li class="item item-missed">
                 <div class="item-photo-block item-photo-block-missed">
-                  <img class="item-photo" src="images/photo-01.jpg" width="80" />
+                  <picture>
+                    <img
+                      class="item-photo"
+                      src="images/photo-01.jpg"
+                      srcset="images/photo-01@2x.jpg 2x"
+                      width="80"
+                      alt="Фото моделей в белых футболках"
+                    />
+                  </picture>
                   <span class="item-size-beige">56</span>
                 </div>
                 <div class="item-description-block item-description-block--missed">
@@ -268,7 +95,15 @@
               </li>
               <li class="item item-missed">
                 <div class="item-photo-block item-photo-block-missed">
-                  <img class="item-photo" src="images/photo-02.jpg" width="80" />
+                  <picture>
+                    <img
+                      class="item-photo"
+                      src="images/photo-02.jpg"
+                      srcset="images/photo-02@2x.jpg 2x"
+                      width="80"
+                      alt="Фото телефона в прозрачном чехле"
+                    />
+                  </picture>
                 </div>
                 <div class="item-description-block item-description-block--missed">
                   <p class="item-title item-title--missing">
@@ -288,7 +123,15 @@
               </li>
               <li class="item item-missed">
                 <div class="item-photo-block item-photo-block-missed">
-                  <img class="item-photo" src="images/photo-03.jpg" width="80" />
+                  <picture>
+                    <img
+                      class="item-photo"
+                      src="images/photo-03.jpg"
+                      srcset="images/photo-03@2x.jpg 2x"
+                      width="80"
+                      alt="Фото упаковки разноцветных карандашей"
+                    />
+                  </picture>
                   <span class="item-size-beige">56/54/52...</span>
                 </div>
                 <div class="item-description-block item-description-block--missed">
@@ -332,18 +175,33 @@
             <p class="delivery-dates">5—6 февраля</p>
             <ul class="cart-items-list items-thumbnails-list">
               <li>
-                <img src="images/photo-01-small.jpg" alt="фото моделей в белых футболках" />
+                <picture>
+                  <img
+                    src="images/photo-01-small.jpg"
+                    srcset="images/photo-01-small@2x.jpg 2x"
+                    alt="фото моделей в белых футболках"
+                  />
+                </picture>
               </li>
               <li>
                 <span>184</span>
-                <img
-                  src="images/photo-02-small.jpg"
-                  alt="фото белого телефона в прозрачном чехле"
-                />
+                <picture>
+                  <img
+                    src="images/photo-02-small.jpg"
+                    srcset="images/photo-02-small@2x.jpg 2x"
+                    alt="фото белого телефона в прозрачном чехле"
+                  />
+                </picture>
               </li>
               <li>
                 <span>2</span>
-                <img src="images/photo-03-small.jpg" alt="фото коробки разноцветных карандашей" />
+                <picture>
+                  <img
+                    src="images/photo-03-small.jpg"
+                    srcset="images/photo-03-small@2x.jpg 2x"
+                    alt="фото коробки разноцветных карандашей"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
@@ -352,10 +210,13 @@
             <ul class="cart-items-list items-thumbnails-list">
               <li>
                 <span>16</span>
-                <img
-                  src="images/photo-02-small.jpg"
-                  alt="фото белого телефона в прозрачном чехле"
-                />
+                <picture>
+                  <img
+                    src="images/photo-02-small.jpg"
+                    srcset="images/photo-02-small@2x.jpg 2x"
+                    alt="фото белого телефона в прозрачном чехле"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
@@ -383,44 +244,60 @@
           <form>
             <fieldset>
               <ul class="customer-details-list">
-                <li class="customer-details-entry--name">
+                <li class="customer-details-entry--name correct-detail">
                   <input
                     type="text"
                     placeholder="Имя"
                     class="customer-details-entry"
                     id="customer-name"
                   />
+                  <label
+                    class="customer-details-label customer-details-label--name"
+                    for="customer-name"
+                    >Укажите имя</label
+                  >
                 </li>
-                <li class="customer-details-entry--surname">
+                <li class="customer-details-entry--surname correct-detail">
                   <input
                     type="text"
                     placeholder="Фамилия"
                     class="customer-details-entry"
                     id="customer-surname"
                   />
+                  <label
+                    class="customer-details-label customer-details-label--surname"
+                    for="customer-surname"
+                    >Укажите фамилию</label
+                  >
                 </li>
-                <li class="customer-details-entry--email">
+                <li class="customer-details-entry--email correct-detail">
                   <input
                     type="text"
                     placeholder="Электронная почта"
                     class="customer-details-entry"
                     id="customer-email"
                   />
+                  <label
+                    class="customer-details-label customer-details-label--email"
+                    for="customer-email"
+                    >Укажите email</label
+                  >
                 </li>
-                <li class="customer-details-entry--phone">
+                <li class="customer-details-entry--phone correct-detail">
                   <input type="text" class="customer-details-entry" id="customer-phone" />
                   <label class="customer-details-label customer-details-label--phone"
                     >Телефон</label
                   >
                 </li>
-                <li class="customer-details-entry--inn">
+                <li class="customer-details-entry--inn correct-detail">
                   <input
                     type="number"
                     placeholder="ИНН"
                     class="customer-details-entry"
                     id="customer-inn"
                   />
-                  <label class="customer-details-label customer-details-inn"
+                  <label
+                    class="customer-details-label customer-details-inn customer-details-label--inn"
                     >Для таможенного оформления</label
                   >
                 </li>
@@ -522,206 +399,226 @@
         <img src="images/icon-nav-profile.svg" width="28" height="28" />
       </a>
     </nav>
-    <section class="modal payment-modal visually-hidden">
-      <div class="modal-heading">
-        <h2>Способ оплаты</h2>
-        <button class="close-payment-modal close-modal"></button>
-      </div>
-      <form>
-        <ul class="modal-cards-list">
-          <li class="modal-payment-card">
-            <div class="modal-payment-method">
-              <div class="payment-card-wrapper">
-                <img src="images/icon-mir.svg" width="30" height="10" />
-              </div>
-              <input
-                type="radio"
-                name="payment-card"
-                id="card-01"
-                class="modal-payment-entry visually-hidden"
-                checked
-              />
-              <label for="card-01">1234 56•• •••• 1234 <span class="card-date">01/30</span></label>
-            </div>
-          </li>
-          <li class="modal-payment-card">
-            <div class="modal-payment-method">
-              <div class="payment-card-wrapper">
-                <img src="images/icon-visa.svg" width="31" height="10" />
-              </div>
-              <input
-                type="radio"
-                name="payment-card"
-                id="card-02"
-                class="modal-payment-entry visually-hidden"
-              />
-              <label for="card-02">1234 56•• •••• 1234 <span class="card-date">01/30</span></label>
-            </div>
-          </li>
-          <li class="modal-payment-card">
-            <div class="modal-payment-method">
-              <div class="payment-card-wrapper">
-                <img src="images/icon-mastercard.svg" width="24" height="14" />
-              </div>
-              <input
-                type="radio"
-                name="payment-card"
-                id="card-03"
-                class="modal-payment-entry visually-hidden"
-              />
-              <label for="card-03">1234 56•• •••• 1234 <span class="card-date">01/30</span></label>
-            </div>
-          </li>
-          <li class="modal-payment-card">
-            <div class="modal-payment-method">
-              <div class="payment-card-wrapper">
-                <img src="images/icon-maestro.svg" width="24" height="14" />
-              </div>
-              <input
-                type="radio"
-                name="payment-card"
-                id="card-04"
-                class="modal-payment-entry visually-hidden"
-              />
-              <label for="card-04">1234 56•• •••• 1234 <span class="card-date">01/30</span></label>
-            </div>
-          </li>
-        </ul>
-        <button type="submit" class="summary-order-button modal-confirm-button">Выбрать</button>
-      </form>
-    </section>
-    <section class="modal delivery-modal visually-hidden">
-      <div class="modal-heading">
-        <h2>Способ доставки</h2>
-        <button class="close-delivery-modal close-modal"></button>
-      </div>
-      <form>
-        <div class="delivery-modal-buttons">
-          <button id="pickpoint" class="delivery-modal-button button--active">
-            В пункт выдачи
-          </button>
-          <button id="address" class="delivery-modal-button">Курьером</button>
+    <div class="overlay payment-modal-overlay visually-hidden">
+      <section class="modal payment-modal">
+        <div class="modal-heading">
+          <h2>Способ оплаты</h2>
+          <button class="close-payment-modal close-modal"></button>
         </div>
-        <h3>Мои адреса</h3>
-        <ul class="modal-pickpoint-list pickpoint modal-list">
-          <li>
-            <div class="pick-up-point modal-pick-up-point">
-              <div>
+        <form>
+          <ul class="modal-cards-list">
+            <li class="modal-payment-card">
+              <div class="modal-payment-method">
+                <div class="payment-card-wrapper">
+                  <img src="images/icon-mir.svg" width="30" height="10" />
+                </div>
                 <input
                   type="radio"
-                  name="pick-up-point"
-                  class="modal-pickpoint-entry visually-hidden"
-                  id="pickpoint-01"
+                  name="payment-card"
+                  id="card-01"
+                  class="modal-payment-entry visually-hidden"
                   checked
                 />
-                <label for="pickpoint-01" class="pick-up-point-address modal-pick-up-point-address">
-                  г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1</label
+                <label for="card-01"
+                  >1234 56•• •••• 1234 <span class="card-date">01/30</span></label
                 >
-                <div class="pick-up-point-info">
-                  <img src="images/icon-rating-star.svg" />
-                  <p class="pick-up-point-working-hours">Пункт выдачи</p>
+              </div>
+            </li>
+            <li class="modal-payment-card">
+              <div class="modal-payment-method">
+                <div class="payment-card-wrapper">
+                  <img src="images/icon-visa.svg" width="31" height="10" />
                 </div>
-              </div>
-              <button class="item-button-delete modal-delete-button"></button>
-            </div>
-          </li>
-          <li>
-            <div class="pick-up-point modal-pick-up-point">
-              <div>
                 <input
                   type="radio"
-                  name="pick-up-point"
-                  id="pickpoint-02"
-                  class="modal-pickpoint-entry visually-hidden"
+                  name="payment-card"
+                  id="card-02"
+                  class="modal-payment-entry visually-hidden"
                 />
-                <label class="pick-up-point-address modal-pick-up-point-address" for="pickpoint-02">
-                  г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1
-                </label>
-                <div class="pick-up-point-info">
-                  <img src="images/icon-rating-star.svg" />
-                  <p class="pick-up-point-rating">4.99</p>
-                  <p class="pick-up-point-working-hours">Пункт выдачи</p>
+                <label for="card-02"
+                  >1234 56•• •••• 1234 <span class="card-date">01/30</span></label
+                >
+              </div>
+            </li>
+            <li class="modal-payment-card">
+              <div class="modal-payment-method">
+                <div class="payment-card-wrapper">
+                  <img src="images/icon-mastercard.svg" width="24" height="14" />
                 </div>
-              </div>
-              <button class="item-button-delete modal-delete-button"></button>
-            </div>
-          </li>
-          <li>
-            <div class="pick-up-point modal-pick-up-point">
-              <div>
                 <input
                   type="radio"
-                  name="pick-up-point"
-                  id="pickpoint-03"
-                  class="modal-pickpoint-entry visually-hidden"
+                  name="payment-card"
+                  id="card-03"
+                  class="modal-payment-entry visually-hidden"
                 />
-                <label for="pickpoint-03" class="pick-up-point-address modal-pick-up-point-address">
-                  г. Бишкек, улица Табышалиева, д. 57
-                </label>
-                <div class="pick-up-point-info">
-                  <img src="images/icon-rating-star.svg" />
-                  <p class="pick-up-point-rating">4.99</p>
-                  <p class="pick-up-point-working-hours">Пункт выдачи</p>
+                <label for="card-03"
+                  >1234 56•• •••• 1234 <span class="card-date">01/30</span></label
+                >
+              </div>
+            </li>
+            <li class="modal-payment-card">
+              <div class="modal-payment-method">
+                <div class="payment-card-wrapper">
+                  <img src="images/icon-maestro.svg" width="24" height="14" />
                 </div>
-              </div>
-              <button class="item-button-delete modal-delete-button"></button>
-            </div>
-          </li>
-        </ul>
-        <ul class="modal-address-list address modal-list visually-hidden">
-          <li>
-            <div class="pick-up-point modal-pick-up-point">
-              <div>
                 <input
                   type="radio"
-                  name="address"
-                  id="address-01"
-                  class="modal-address-entry visually-hidden"
-                  checked
+                  name="payment-card"
+                  id="card-04"
+                  class="modal-payment-entry visually-hidden"
                 />
-                <label for="address-01" class="pick-up-point-address modal-pick-up-point-address">
-                  Бишкек, улица Табышалиева, 57
-                </label>
+                <label for="card-04"
+                  >1234 56•• •••• 1234 <span class="card-date">01/30</span></label
+                >
               </div>
-              <button class="item-button-delete modal-delete-button"></button>
-            </div>
-          </li>
-          <li>
-            <div class="pick-up-point modal-pick-up-point">
-              <div>
-                <input
-                  type="radio"
-                  name="address"
-                  id="address-02"
-                  class="modal-address-entry visually-hidden"
-                />
-                <label for="address-02" class="pick-up-point-address modal-pick-up-point-address">
-                  Бишкек, улица Жукеева-Пудовкина, 77/1
-                </label>
+            </li>
+          </ul>
+          <button type="submit" class="summary-order-button modal-confirm-button">Выбрать</button>
+        </form>
+      </section>
+    </div>
+    <div class="overlay delivery-modal-overlay visually-hidden">
+      <section class="modal delivery-modal">
+        <div class="modal-heading">
+          <h2>Способ доставки</h2>
+          <button class="close-delivery-modal close-modal"></button>
+        </div>
+        <form>
+          <div class="delivery-modal-buttons">
+            <button id="pickpoint" class="delivery-modal-button button--active">
+              В пункт выдачи
+            </button>
+            <button id="address" class="delivery-modal-button">Курьером</button>
+          </div>
+          <h3>Мои адреса</h3>
+          <ul class="modal-pickpoint-list pickpoint modal-list">
+            <li>
+              <div class="pick-up-point modal-pick-up-point">
+                <div>
+                  <input
+                    type="radio"
+                    name="pick-up-point"
+                    class="modal-pickpoint-entry visually-hidden"
+                    id="pickpoint-01"
+                    checked
+                  />
+                  <label
+                    for="pickpoint-01"
+                    class="pick-up-point-address modal-pick-up-point-address"
+                  >
+                    г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1</label
+                  >
+                  <div class="pick-up-point-info">
+                    <img src="images/icon-rating-star.svg" />
+                    <p class="pick-up-point-working-hours">Пункт выдачи</p>
+                  </div>
+                </div>
+                <button class="item-button-delete modal-delete-button"></button>
               </div>
-              <button class="item-button-delete modal-delete-button"></button>
-            </div>
-          </li>
-          <li>
-            <div class="pick-up-point modal-pick-up-point">
-              <div>
-                <input
-                  type="radio"
-                  name="address"
-                  id="address-03"
-                  class="modal-address-entry visually-hidden"
-                />
-                <label for="address-03" class="pick-up-point-address modal-pick-up-point-address">
-                  Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1
-                </label>
+            </li>
+            <li>
+              <div class="pick-up-point modal-pick-up-point">
+                <div>
+                  <input
+                    type="radio"
+                    name="pick-up-point"
+                    id="pickpoint-02"
+                    class="modal-pickpoint-entry visually-hidden"
+                  />
+                  <label
+                    class="pick-up-point-address modal-pick-up-point-address"
+                    for="pickpoint-02"
+                  >
+                    г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1
+                  </label>
+                  <div class="pick-up-point-info">
+                    <img src="images/icon-rating-star.svg" />
+                    <p class="pick-up-point-rating">4.99</p>
+                    <p class="pick-up-point-working-hours">Пункт выдачи</p>
+                  </div>
+                </div>
+                <button class="item-button-delete modal-delete-button"></button>
               </div>
-              <button class="item-button-delete modal-delete-button"></button>
-            </div>
-          </li>
-        </ul>
-        <button type="submit" class="summary-order-button modal-confirm-button">Выбрать</button>
-      </form>
-    </section>
-    <script src="script.js"></script>
+            </li>
+            <li>
+              <div class="pick-up-point modal-pick-up-point">
+                <div>
+                  <input
+                    type="radio"
+                    name="pick-up-point"
+                    id="pickpoint-03"
+                    class="modal-pickpoint-entry visually-hidden"
+                  />
+                  <label
+                    for="pickpoint-03"
+                    class="pick-up-point-address modal-pick-up-point-address"
+                  >
+                    г. Бишкек, улица Табышалиева, д. 57
+                  </label>
+                  <div class="pick-up-point-info">
+                    <img src="images/icon-rating-star.svg" />
+                    <p class="pick-up-point-rating">4.99</p>
+                    <p class="pick-up-point-working-hours">Пункт выдачи</p>
+                  </div>
+                </div>
+                <button class="item-button-delete modal-delete-button"></button>
+              </div>
+            </li>
+          </ul>
+          <ul class="modal-address-list address modal-list visually-hidden">
+            <li>
+              <div class="pick-up-point modal-pick-up-point">
+                <div>
+                  <input
+                    type="radio"
+                    name="address"
+                    id="address-01"
+                    class="modal-address-entry visually-hidden"
+                    checked
+                  />
+                  <label for="address-01" class="pick-up-point-address modal-pick-up-point-address">
+                    Бишкек, улица Табышалиева, 57
+                  </label>
+                </div>
+                <button class="item-button-delete modal-delete-button"></button>
+              </div>
+            </li>
+            <li>
+              <div class="pick-up-point modal-pick-up-point">
+                <div>
+                  <input
+                    type="radio"
+                    name="address"
+                    id="address-02"
+                    class="modal-address-entry visually-hidden"
+                  />
+                  <label for="address-02" class="pick-up-point-address modal-pick-up-point-address">
+                    Бишкек, улица Жукеева-Пудовкина, 77/1
+                  </label>
+                </div>
+                <button class="item-button-delete modal-delete-button"></button>
+              </div>
+            </li>
+            <li>
+              <div class="pick-up-point modal-pick-up-point">
+                <div>
+                  <input
+                    type="radio"
+                    name="address"
+                    id="address-03"
+                    class="modal-address-entry visually-hidden"
+                  />
+                  <label for="address-03" class="pick-up-point-address modal-pick-up-point-address">
+                    Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1
+                  </label>
+                </div>
+                <button class="item-button-delete modal-delete-button"></button>
+              </div>
+            </li>
+          </ul>
+          <button type="submit" class="summary-order-button modal-confirm-button">Выбрать</button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>
