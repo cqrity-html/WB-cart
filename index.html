@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Товары и точка - Корзина</title>
-    <script defer src="index.js" type="module"></script>
+    <script type="module" src="index.js"></script>
   </head>
   <body>
     <header class="main-header">
-      <img class="header-burger-menu" src="images/icon-burger.svg" width="28" height="28" />
+      <img class="header-burger-menu" src="images/icon-burger.svg" width="28" height="28" alt="">
       <h1 class="header-heading">Товары и точка</h1>
-      <input class="header-search" type="text" placeholder="Я ищу..." />
+      <input class="header-search" type="text" placeholder="Я ищу...">
       <label class="header-search-label"> </label>
-      <img class="header-burger-search" src="images/icon-search.svg" width="23" height="23" />
+      <img
+        class="header-burger-search"
+        src="images/icon-search.svg"
+        width="23"
+        height="23"
+        alt=""
+      >
       <div class="header-links">
         <div class="main-header-profile">
-          <img src="images/icon-profile.svg" />
+          <img src="images/icon-profile.svg" alt="">
           <a>Профиль</a>
         </div>
         <div class="main-header-cart">
-          <img src="images/icon-cart.svg" width="28" height="28" />
+          <img src="images/icon-cart.svg" width="28" height="28" alt="">
           <a>Корзина</a>
         </div>
       </div>
@@ -32,7 +38,7 @@
           <h2 class="subheading">Корзина</h2>
           <div class="check-all-block">
             <div class="check-all-block-checkbox">
-              <input type="checkbox" class="check-all-checkbox visually-hidden" />
+              <input type="checkbox" class="check-all-checkbox visually-hidden">
               <label class="check-all-block-label">Выбрать все</label>
             </div>
             <div class="presented-items-summary-block visually-hidden">
@@ -44,12 +50,13 @@
                 src="images/icon-arrow-up.svg"
                 width="20"
                 height="20"
-              />
+                alt=""
+              >
             </button>
           </div>
-          <section class="cart-items cart-items--presented">
-            <ul class="cart-items-list"></ul>
-          </section>
+          <div class="cart-items cart-items--presented">
+            <ul class="cart-items-list cart-items--presented"></ul>
+          </div>
           <div class="items-lists-separator"></div>
           <div class="check-all-block missing-items-header check-all-block--missing">
             <div class="missing-items-header-block">
@@ -61,97 +68,13 @@
                 width="20"
                 height="20"
                 class="fold-all-image--missing"
-              />
+                alt=""
+              >
             </button>
           </div>
-          <section class="missing-items">
-            <ul class="cart-items-list cart-items--missing">
-              <li class="item item-missed">
-                <div class="item-photo-block item-photo-block-missed">
-                  <picture>
-                    <img
-                      class="item-photo"
-                      src="images/photo-01.jpg"
-                      srcset="images/photo-01@2x.jpg 2x"
-                      width="80"
-                      alt="Фото моделей в белых футболках"
-                    />
-                  </picture>
-                  <span class="item-size-beige">56</span>
-                </div>
-                <div class="item-description-block item-description-block--missed">
-                  <p class="item-title item-title--missing">Футболка UZcotton мужская</p>
-                  <div class="item-color-size-block">
-                    <p class="item-color">Цвет: белый</p>
-                    <p class="item-size">Размер: 56</p>
-                  </div>
-                </div>
-                <div class="item-buttons-block item-buttons-block--missing">
-                  <div class="item-misc-buttons item-misc-buttons--missing">
-                    <button class="item-button-favorite item-button-favorite--missing"></button>
-                    <button class="item-button-delete item-button-delete--missing"></button>
-                  </div>
-                </div>
-              </li>
-              <li class="item item-missed">
-                <div class="item-photo-block item-photo-block-missed">
-                  <picture>
-                    <img
-                      class="item-photo"
-                      src="images/photo-02.jpg"
-                      srcset="images/photo-02@2x.jpg 2x"
-                      width="80"
-                      alt="Фото телефона в прозрачном чехле"
-                    />
-                  </picture>
-                </div>
-                <div class="item-description-block item-description-block--missed">
-                  <p class="item-title item-title--missing">
-                    Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на
-                    Apple iPhone XR, MobiSafe
-                  </p>
-                  <div class="item-color-size-block">
-                    <p class="item-color">Цвет: прозрачный</p>
-                  </div>
-                </div>
-                <div class="item-buttons-block item-buttons-block--missing">
-                  <div class="item-misc-buttons item-misc-buttons--missing">
-                    <button class="item-button-favorite item-button-favorite--missing"></button>
-                    <button class="item-button-delete item-button-delete--missing"></button>
-                  </div>
-                </div>
-              </li>
-              <li class="item item-missed">
-                <div class="item-photo-block item-photo-block-missed">
-                  <picture>
-                    <img
-                      class="item-photo"
-                      src="images/photo-03.jpg"
-                      srcset="images/photo-03@2x.jpg 2x"
-                      width="80"
-                      alt="Фото упаковки разноцветных карандашей"
-                    />
-                  </picture>
-                  <span class="item-size-beige">56/54/52...</span>
-                </div>
-                <div class="item-description-block item-description-block--missed">
-                  <p class="item-title item-title--missing">
-                    Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
-                    шестигранные, Faber-Castell
-                  </p>
-                  <div class="item-color-size-block">
-                    <p class="item-size">Размер: 56/54/52...</p>
-                  </div>
-                </div>
-                <div class="item-buttons-block item-buttons-block--missing">
-                  <div class="item-misc-buttons item-misc-buttons--missing">
-                    <button class="item-button-favorite item-button-favorite--missing"></button>
-                    <button class="item-button-delete item-button-delete--missing"></button>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
+          <div class="missing-items">
+            <ul class="cart-items-list cart-items--missing"></ul>
+          </div>
         </section>
         <section class="delivery">
           <div class="delivery-block-heading">
@@ -162,7 +85,7 @@
             <p class="pick-up-point-heading">Пункт выдачи</p>
             <p class="pick-up-point-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
             <div class="pick-up-point-info">
-              <img src="images/icon-rating-star.svg" />
+              <img src="images/icon-rating-star.svg" alt="">
               <p class="pick-up-point-rating">4.99</p>
               <p class="pick-up-point-working-hours">Ежедневно с 10 до 21</p>
             </div>
@@ -180,7 +103,7 @@
                     src="images/photo-01-small.jpg"
                     srcset="images/photo-01-small@2x.jpg 2x"
                     alt="фото моделей в белых футболках"
-                  />
+                  >
                 </picture>
               </li>
               <li>
@@ -190,7 +113,7 @@
                     src="images/photo-02-small.jpg"
                     srcset="images/photo-02-small@2x.jpg 2x"
                     alt="фото белого телефона в прозрачном чехле"
-                  />
+                  >
                 </picture>
               </li>
               <li>
@@ -200,7 +123,7 @@
                     src="images/photo-03-small.jpg"
                     srcset="images/photo-03-small@2x.jpg 2x"
                     alt="фото коробки разноцветных карандашей"
-                  />
+                  >
                 </picture>
               </li>
             </ul>
@@ -215,13 +138,13 @@
                     src="images/photo-02-small.jpg"
                     srcset="images/photo-02-small@2x.jpg 2x"
                     alt="фото белого телефона в прозрачном чехле"
-                  />
+                  >
                 </picture>
               </li>
             </ul>
           </div>
           <div class="delivery-refund">
-            <img src="images/icon-marked.svg" />
+            <img src="images/icon-marked.svg" alt="">
             <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
             <div class="delivery-refund-block">
               <p>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
@@ -234,7 +157,7 @@
             <button class="change-payment-button">Изменить</button>
           </div>
           <div class="payment-method-details">
-            <img src="images/mir.png" />
+            <img src="images/icon-mir.svg" alt="">
             <p>1234 56•• •••• 1234 01/30</p>
           </div>
           <p class="payment-method-message">Спишем оплату с карты при получении</p>
@@ -250,7 +173,7 @@
                     placeholder="Имя"
                     class="customer-details-entry"
                     id="customer-name"
-                  />
+                  >
                   <label
                     class="customer-details-label customer-details-label--name"
                     for="customer-name"
@@ -263,7 +186,7 @@
                     placeholder="Фамилия"
                     class="customer-details-entry"
                     id="customer-surname"
-                  />
+                  >
                   <label
                     class="customer-details-label customer-details-label--surname"
                     for="customer-surname"
@@ -276,7 +199,7 @@
                     placeholder="Электронная почта"
                     class="customer-details-entry"
                     id="customer-email"
-                  />
+                  >
                   <label
                     class="customer-details-label customer-details-label--email"
                     for="customer-email"
@@ -284,7 +207,7 @@
                   >
                 </li>
                 <li class="customer-details-entry--phone correct-detail">
-                  <input type="text" class="customer-details-entry" id="customer-phone" />
+                  <input type="text" class="customer-details-entry" id="customer-phone">
                   <label class="customer-details-label customer-details-label--phone"
                     >Телефон</label
                   >
@@ -295,7 +218,7 @@
                     placeholder="ИНН"
                     class="customer-details-entry"
                     id="customer-inn"
-                  />
+                  >
                   <label
                     class="customer-details-label customer-details-inn customer-details-label--inn"
                     >Для таможенного оформления</label
@@ -339,15 +262,15 @@
           <div class="summary-pick-point-heading">
             <h3>Доставка в пункт выдачи</h3>
             <button class="change-delivery-button">
-              <img src="images/icon-pencil.svg" width="16" height="16" />
+              <img src="images/icon-pencil.svg" width="16" height="16" alt="">
             </button>
           </div>
           <p>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
           <p class="summary-pick-point-date">5-8 фев</p>
         </div>
         <div class="delivery-refund delivery-refund--summary">
-          <img src="images/icon-marked.svg" />
-          <p>Обратная доставка товаров <br />на склад при отказе — <span>бесплатно</span></p>
+          <img src="images/icon-marked.svg" alt="">
+          <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
           <div class="delivery-refund-block">
             <p>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
           </div>
@@ -356,24 +279,24 @@
           <div class="summary-payment-heading">
             <h3>Оплата картой</h3>
             <button class="change-payment-button">
-              <img src="images/icon-pencil.svg" width="16" height="16" />
+              <img src="images/icon-pencil.svg" width="16" height="16" alt="">
             </button>
           </div>
           <div class="summary-payment-method">
-            <img src="images/mir.png" />
+            <img src="images/icon-mir.svg" alt="">
             <p>1234 56•• •••• 1234 <span class="card-date">01/30</span></p>
           </div>
         </div>
         <div class="summary-payment-time">
           <div class="summary-payment-time-block">
-            <input type="checkbox" class="bill-now-button visually-hidden" id="bill-now-button" />
+            <input type="checkbox" class="bill-now-button visually-hidden" id="bill-now-button">
             <label for="bill-now-button">Списать оплату сразу</label>
           </div>
           <p>Спишем оплату с карты при получении</p>
         </div>
         <button type="submit" class="summary-order-button">Заказать</button>
         <div class="summary-agreement">
-          <img src="images/icon-check.svg" />
+          <img src="images/icon-check.svg" alt="">
           <p>Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
         </div>
       </section>
@@ -383,20 +306,20 @@
     </footer>
     <nav class="main-navigation">
       <a>
-        <img src="images/icon-nav-home.svg" width="28" height="28" />
+        <img src="images/icon-nav-home.svg" width="28" height="28" alt="">
       </a>
       <a>
-        <img src="images/icon-nav-search.svg" width="28" height="28" />
+        <img src="images/icon-nav-search.svg" width="28" height="28" alt="">
       </a>
       <a class="main-navigation-cart">
         <span>3</span>
-        <img src="images/icon-nav-cart.svg" width="28" height="28" #="cart-nav-icon" />
+        <img src="images/icon-nav-cart.svg" width="28" height="28" alt="">
       </a>
       <a>
-        <img src="images/icon-nav-favorite.svg" width="28" height="28" />
+        <img src="images/icon-nav-favorite.svg" width="28" height="28" alt="">
       </a>
       <a>
-        <img src="images/icon-nav-profile.svg" width="28" height="28" />
+        <img src="images/icon-nav-profile.svg" width="28" height="28" alt="">
       </a>
     </nav>
     <div class="overlay payment-modal-overlay visually-hidden">
@@ -410,7 +333,7 @@
             <li class="modal-payment-card">
               <div class="modal-payment-method">
                 <div class="payment-card-wrapper">
-                  <img src="images/icon-mir.svg" width="30" height="10" />
+                  <img src="images/icon-mir.svg" width="30" height="10" alt="">
                 </div>
                 <input
                   type="radio"
@@ -418,7 +341,7 @@
                   id="card-01"
                   class="modal-payment-entry visually-hidden"
                   checked
-                />
+                >
                 <label for="card-01"
                   >1234 56•• •••• 1234 <span class="card-date">01/30</span></label
                 >
@@ -427,14 +350,14 @@
             <li class="modal-payment-card">
               <div class="modal-payment-method">
                 <div class="payment-card-wrapper">
-                  <img src="images/icon-visa.svg" width="31" height="10" />
+                  <img src="images/icon-visa.svg" width="31" height="10" alt="">
                 </div>
                 <input
                   type="radio"
                   name="payment-card"
                   id="card-02"
                   class="modal-payment-entry visually-hidden"
-                />
+                >
                 <label for="card-02"
                   >1234 56•• •••• 1234 <span class="card-date">01/30</span></label
                 >
@@ -443,14 +366,14 @@
             <li class="modal-payment-card">
               <div class="modal-payment-method">
                 <div class="payment-card-wrapper">
-                  <img src="images/icon-mastercard.svg" width="24" height="14" />
+                  <img src="images/icon-mastercard.svg" width="24" height="14" alt="">
                 </div>
                 <input
                   type="radio"
                   name="payment-card"
                   id="card-03"
                   class="modal-payment-entry visually-hidden"
-                />
+                >
                 <label for="card-03"
                   >1234 56•• •••• 1234 <span class="card-date">01/30</span></label
                 >
@@ -459,14 +382,14 @@
             <li class="modal-payment-card">
               <div class="modal-payment-method">
                 <div class="payment-card-wrapper">
-                  <img src="images/icon-maestro.svg" width="24" height="14" />
+                  <img src="images/icon-maestro.svg" width="24" height="14" alt="">
                 </div>
                 <input
                   type="radio"
                   name="payment-card"
                   id="card-04"
                   class="modal-payment-entry visually-hidden"
-                />
+                >
                 <label for="card-04"
                   >1234 56•• •••• 1234 <span class="card-date">01/30</span></label
                 >
@@ -501,7 +424,7 @@
                     class="modal-pickpoint-entry visually-hidden"
                     id="pickpoint-01"
                     checked
-                  />
+                  >
                   <label
                     for="pickpoint-01"
                     class="pick-up-point-address modal-pick-up-point-address"
@@ -509,7 +432,7 @@
                     г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1</label
                   >
                   <div class="pick-up-point-info">
-                    <img src="images/icon-rating-star.svg" />
+                    <img src="images/icon-rating-star.svg" alt="">
                     <p class="pick-up-point-working-hours">Пункт выдачи</p>
                   </div>
                 </div>
@@ -524,7 +447,7 @@
                     name="pick-up-point"
                     id="pickpoint-02"
                     class="modal-pickpoint-entry visually-hidden"
-                  />
+                  >
                   <label
                     class="pick-up-point-address modal-pick-up-point-address"
                     for="pickpoint-02"
@@ -532,7 +455,7 @@
                     г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1
                   </label>
                   <div class="pick-up-point-info">
-                    <img src="images/icon-rating-star.svg" />
+                    <img src="images/icon-rating-star.svg" alt="">
                     <p class="pick-up-point-rating">4.99</p>
                     <p class="pick-up-point-working-hours">Пункт выдачи</p>
                   </div>
@@ -548,7 +471,7 @@
                     name="pick-up-point"
                     id="pickpoint-03"
                     class="modal-pickpoint-entry visually-hidden"
-                  />
+                  >
                   <label
                     for="pickpoint-03"
                     class="pick-up-point-address modal-pick-up-point-address"
@@ -556,7 +479,7 @@
                     г. Бишкек, улица Табышалиева, д. 57
                   </label>
                   <div class="pick-up-point-info">
-                    <img src="images/icon-rating-star.svg" />
+                    <img src="images/icon-rating-star.svg" alt="">
                     <p class="pick-up-point-rating">4.99</p>
                     <p class="pick-up-point-working-hours">Пункт выдачи</p>
                   </div>
@@ -575,7 +498,7 @@
                     id="address-01"
                     class="modal-address-entry visually-hidden"
                     checked
-                  />
+                  >
                   <label for="address-01" class="pick-up-point-address modal-pick-up-point-address">
                     Бишкек, улица Табышалиева, 57
                   </label>
@@ -591,7 +514,7 @@
                     name="address"
                     id="address-02"
                     class="modal-address-entry visually-hidden"
-                  />
+                  >
                   <label for="address-02" class="pick-up-point-address modal-pick-up-point-address">
                     Бишкек, улица Жукеева-Пудовкина, 77/1
                   </label>
@@ -607,7 +530,7 @@
                     name="address"
                     id="address-03"
                     class="modal-address-entry visually-hidden"
-                  />
+                  >
                   <label for="address-03" class="pick-up-point-address modal-pick-up-point-address">
                     Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1
                   </label>
